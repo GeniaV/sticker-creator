@@ -1,0 +1,10 @@
+@media print {
+  @page {
+    size: 58mm 40mm;
+  }
+}
+
+.print {
+  margin-bottom: 25px;
+}
+

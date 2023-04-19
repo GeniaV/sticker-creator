@@ -1,0 +1,50 @@
+.name {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  color: #282828;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background-color: #f9e003;
+  padding: 15px 88px 15px 88px;
+}
+
+.name:first-child {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.name:last-child {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.name:nth-child(2) {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.name:nth-child(3) {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.data {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background-color: #3B3B3B;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+table {
+  border-spacing: 10px;
+}
+
+.cnt {
+  display: flex;
+}

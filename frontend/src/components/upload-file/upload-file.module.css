@@ -1,0 +1,27 @@
+.hidden {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  max-height: 47px;
+  max-width: 100px;
+  width: 100%;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  line-height: 120%;
+  background-color: transparent;
+  color: #f9e003;
+  text-transform: uppercase;
+  cursor: pointer;
+}
