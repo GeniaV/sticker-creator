@@ -11,7 +11,7 @@
 
 **Пример excel-файла для загрузки:**
 
-(Шаблон в excel)['https://docs.google.com/spreadsheets/d/1LBzU09qD85x45q4IvihgdesSLrIX7BG9/edit?usp=share_link&ouid=104276769782258887882&rtpof=true&sd=true']
+[Шаблон в excel](https://docs.google.com/spreadsheets/d/1LBzU09qD85x45q4IvihgdesSLrIX7BG9/edit?usp=share_link&ouid=104276769782258887882&rtpof=true&sd=true)
 
 ## Цель и предыстория
 **Цель – оптимизировать рутинную работу**, которая ранее занимала много времени, т.к. проводилась с использованием Photoshop и сторонних ресурсов для генерации штрих-кода.
@@ -36,3 +36,6 @@ React, Redux Toolkit, TypeScript, Express
 
 ## Описание работы приложения
 Здесь будет описна детельная работа приложения с визуализациями
+
+## Запуск проект
+Здесь будет описан процесс запуска проекта
