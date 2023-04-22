@@ -3,6 +3,7 @@ import cors from 'cors';
 import multer from 'multer';
 import XLSX from 'xlsx';
 import { IExcelData } from './types/types';
+import { clearUploadsFolder } from './helpers/functions';
 
 const app = express();
 
@@ -24,6 +25,8 @@ app.post('/upload', upload.single('excelFile'), (req, res) => {
   const worksheet = workbook.Sheets[sheetName];
   const data: IExcelData[] = XLSX.utils.sheet_to_json(worksheet);
   res.json(data);
+
+  clearUploadsFolder();
 }
 );
 
