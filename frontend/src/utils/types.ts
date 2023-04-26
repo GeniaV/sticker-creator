@@ -35,3 +35,9 @@ export type TStikerInfo = {
 export type TCode = {
   code: string,
 }
+
+export interface IPagination {
+  itemsPerPage: number,
+  totalItems: number,
+  paginate: (number: number) => void,
+}

@@ -1,8 +1,8 @@
 import { ITableRowData } from '../../utils/types';
-import TableComponent from '../table/table';
+import { TableComponent } from '../table/table';
 import styles from './data.module.css';
 
-function Data() {
+const Data = () => {
   const header: ITableRowData = {
     item: "Артикул",
     barcode: "Штрих-код",

@@ -58,6 +58,8 @@ React, Redux Toolkit, TypeScript, Express
 
 ![4](README_static/4.JPG)
 
+![4.2](README_static/4.2.jpg)
+
 Справа появится превью стикера. Нажмитие **«Скачать»**
 
 ![5](README_static/5.JPG)
