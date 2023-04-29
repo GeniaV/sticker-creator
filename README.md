@@ -74,6 +74,10 @@ React, Redux Toolkit, TypeScript, Express
 
 ![7](README_static/7.JPG)
 
+Указанные действия также есть в инструкции. Для просмотра инструкции необходимо нажать «Открыть инструкцию» 
+
+![8](README_static/8.jpg)
+
 ## Запуск проект
 
 Необходимо, чтобы был установлен [Node.js](https://nodejs.org/en).

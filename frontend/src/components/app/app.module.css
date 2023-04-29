@@ -25,10 +25,12 @@
 }
 
 .link {
-  color: white;
   text-decoration: underline;
   color: #f9e003;
+  background-color: transparent;
   text-transform: uppercase;
+  font-family: 'Roboto';
+  border: none;
   padding: 0;
   margin: 0;
   font-weight: 300;
@@ -61,4 +63,19 @@
   margin: 0;
   padding: 0;
   max-width: 300px;
+}
+
+.list_item {
+  list-style-type: none;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.list {
+  padding: 0;
+  margin-left: 50px;
+  max-width: 600px;
+  margin-bottom: 50px;
 }

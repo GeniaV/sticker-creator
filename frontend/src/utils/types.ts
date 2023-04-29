@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface ITableRowData {
   item: string,
   barcode: string,
@@ -41,3 +43,9 @@ export interface IPagination {
   totalItems: number,
   paginate: (number: number) => void,
 }
+
+export interface IModal {
+  title: string;
+  close: () => void;
+  children?: ReactNode;
+};
