@@ -73,4 +73,6 @@
   width: 136px;
   height: 20px;
   align-self: center;
+  display: flex;
 }
+

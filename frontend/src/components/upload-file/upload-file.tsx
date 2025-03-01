@@ -52,6 +52,10 @@ export const UploadFile = ({lenght, height}: ISticker) => {
       dispatch(removeData());
       dispatch(deleteStickerSize());
       dispatch(deleteStickerInfo());
+
+      if (filePicker.current) {
+        filePicker.current.value = '';
+      }
     }
   }
 

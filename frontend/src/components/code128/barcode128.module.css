@@ -1,0 +1,9 @@
+.barcode {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.err {
+  text-align: center;
+}

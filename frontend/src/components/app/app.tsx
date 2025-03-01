@@ -5,6 +5,7 @@ import { useAppSelector } from '../..';
 import PdfSticker from '../pdf-sticker/pdf-sticker';
 import { Modal } from '../modal/modal';
 import { useState } from 'react';
+import { MarketplaceProvider } from '../../context/context';
 
 function App() {
   const stickerSize = useAppSelector(state => state.size);
@@ -23,6 +24,7 @@ function App() {
   }
 
   return (
+    <MarketplaceProvider>
     <main className={styles.main}>
       <Header />
       <Data />
@@ -39,7 +41,7 @@ function App() {
             <ul className={styles.list}>
               <li className={styles.list_item}>1. Введите размеры стикера в мм. Появится кнопка «Загрузить данные».</li>
               <li className={styles.list_item}>2. Нажмите «Загрузить данные» и выберите в открывшемся окне excel-файл для
-                загрузки. Файл подгрузится в таблицу.</li>
+                загрузки. Файл подгрузится в таблицу. Выберите для какого маркетплейса создаете стикеры.</li>
               <li className={styles.list_item}>3. Для создания стикера нажмите кнопку «Создать»
                 рядом со строкой, на которой расположена информация о стикере. Превью отразится справа на экране.</li>
               <li className={styles.list_item}>4. Для того, чтобы скачать стикер, нажмите кнопку «Скачать»
@@ -50,6 +52,7 @@ function App() {
           </article>
         </Modal>}
     </main>
+    </MarketplaceProvider>
   );
 }
 

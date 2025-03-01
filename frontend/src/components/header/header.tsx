@@ -2,10 +2,17 @@ import styles from './header.module.css';
 import logo from "../../images/logo.png";
 import { UploadFile } from '../upload-file/upload-file';
 import { useState } from 'react';
+import { useMarketplace } from '../../context/context';
 
 function Header() {
   const [lengthInput, setlengthInput] = useState('');
   const [heightInput, setheightInput] = useState('');
+  const { marketplace, setMarketplace } = useMarketplace();
+
+  const selectStyle = {
+    color: marketplace === 'Ozon' ? '#005bfd' : 'white',
+    backgroundColor: marketplace === 'Ozon' ? 'white' : '#ad40f2',
+  };
 
   return (
     <header className={styles.header}>
@@ -28,6 +35,15 @@ function Header() {
         </div>
         <UploadFile lenght={lengthInput} height={heightInput}/>
       </div>
+      <select
+        value={marketplace}
+        onChange={(e) => setMarketplace(e.target.value)}
+        className={styles.select}
+        style={selectStyle}
+      >
+        <option value="WB">WB</option>
+        <option value="Ozon">Ozon</option>
+      </select>
     </header>
   );
 }
