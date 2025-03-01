@@ -12,19 +12,28 @@ const PdfSticker = () => {
 
   const { barcode, item } = stickerInfo;
 
-  const reactToPrintContent = useCallback(() => {
-    return componentRef.current;
-  }, [componentRef.current]);
+  const reactToPrintContent = useCallback(() => componentRef.current, []);
 
   const reactToPrintTrigger = useCallback(() => {
     return <Button text='Скачать' type='button' buttonSize='big' />
   }, []);
 
+  const pageSize = (stickerSize.lenght === '40' && stickerSize.height === '30')
+    ? '40mm 30mm'
+    : '58mm 40mm';
+
 
   return (
     <div>
+      <style>{`
+        @media print {
+          @page {
+            size: ${pageSize};
+          }
+        }
+      `}</style>
       <div ref={componentRef} className={styles.print}>
-        <Sticker lenght={stickerSize.lenght} height={stickerSize.height}/>
+        <Sticker lenght={stickerSize.lenght} height={stickerSize.height} />
       </div>
       <ReactToPrint
         content={reactToPrintContent}
